@@ -1,0 +1,1539 @@
+{
+  "departments": [
+    "Atención al Cliente",
+    "Ventas y Caja",
+    "Operaciones y Almacén",
+    "Cocina y Barra",
+    "Soporte y Sistemas"
+  ],
+  "shifts": [
+    {
+      "id": "shift-morning",
+      "name": "Turno Mañana",
+      "code": "M",
+      "startTime": "08:00",
+      "endTime": "16:00",
+      "durationHours": 8,
+      "color": "#0284c7",
+      "bgColor": "#e0f2fe",
+      "borderColor": "#7dd3fc",
+      "textColor": "#0369a1",
+      "isBreak": false,
+      "isLeave": false
+    },
+    {
+      "id": "shift-afternoon",
+      "name": "Turno Tarde",
+      "code": "T",
+      "startTime": "14:00",
+      "endTime": "22:00",
+      "durationHours": 8,
+      "color": "#d97706",
+      "bgColor": "#fef3c7",
+      "borderColor": "#fcd34d",
+      "textColor": "#b45309",
+      "isBreak": false,
+      "isLeave": false
+    },
+    {
+      "id": "shift-night",
+      "name": "Turno Noche",
+      "code": "N",
+      "startTime": "22:00",
+      "endTime": "06:00",
+      "durationHours": 8,
+      "color": "#7c3aed",
+      "bgColor": "#f3e8ff",
+      "borderColor": "#d8b4fe",
+      "textColor": "#6d28d9",
+      "isBreak": false,
+      "isLeave": false
+    },
+    {
+      "id": "shift-split",
+      "name": "Turno Partido",
+      "code": "P",
+      "startTime": "09:00",
+      "endTime": "19:00",
+      "durationHours": 8,
+      "color": "#059669",
+      "bgColor": "#d1fae5",
+      "borderColor": "#6ee7b7",
+      "textColor": "#047857",
+      "isBreak": false,
+      "isLeave": false
+    },
+    {
+      "id": "shift-half",
+      "name": "Media Jornada",
+      "code": "MJ",
+      "startTime": "09:00",
+      "endTime": "13:00",
+      "durationHours": 4,
+      "color": "#0891b2",
+      "bgColor": "#cffafe",
+      "borderColor": "#67e8f9",
+      "textColor": "#0e7490",
+      "isBreak": false,
+      "isLeave": false
+    },
+    {
+      "id": "shift-off",
+      "name": "Día Libre / Descanso",
+      "code": "LIBRE",
+      "startTime": "00:00",
+      "endTime": "00:00",
+      "durationHours": 0,
+      "color": "#64748b",
+      "bgColor": "#f1f5f9",
+      "borderColor": "#cbd5e1",
+      "textColor": "#475569",
+      "isBreak": true,
+      "isLeave": false
+    },
+    {
+      "id": "shift-vacation",
+      "name": "Vacaciones",
+      "code": "VAC",
+      "startTime": "00:00",
+      "endTime": "00:00",
+      "durationHours": 0,
+      "color": "#ea580c",
+      "bgColor": "#ffedd5",
+      "borderColor": "#fdba74",
+      "textColor": "#c2410c",
+      "isBreak": false,
+      "isLeave": true
+    },
+    {
+      "id": "shift-leave",
+      "name": "Permiso Médico / Baja",
+      "code": "BAJA",
+      "startTime": "00:00",
+      "endTime": "00:00",
+      "durationHours": 0,
+      "color": "#e11d48",
+      "bgColor": "#ffe4e6",
+      "borderColor": "#fda4af",
+      "textColor": "#be123c",
+      "isBreak": false,
+      "isLeave": true
+    }
+  ],
+  "collaborators": [
+    {
+      "id": "col-1",
+      "code": "1001",
+      "pin": "1234",
+      "name": "Ana María Morales",
+      "email": "ana.morales@empresa.com",
+      "phone": "+34 612 111 222",
+      "department": "Atención al Cliente",
+      "role": "Coordinadora de Turno",
+      "avatarColor": "#2563eb",
+      "targetWeeklyHours": 40,
+      "active": true
+    },
+    {
+      "id": "col-2",
+      "code": "1002",
+      "pin": "1234",
+      "name": "Carlos Andrés Vega",
+      "email": "carlos.vega@empresa.com",
+      "phone": "+34 612 222 333",
+      "department": "Atención al Cliente",
+      "role": "Especialista de Servicio",
+      "avatarColor": "#059669",
+      "targetWeeklyHours": 40,
+      "active": true
+    },
+    {
+      "id": "col-3",
+      "code": "1003",
+      "pin": "1234",
+      "name": "Sofía Valenzuela",
+      "email": "sofia.v@empresa.com",
+      "phone": "+34 612 333 444",
+      "department": "Ventas y Caja",
+      "role": "Supervisora de Cajas",
+      "avatarColor": "#d97706",
+      "targetWeeklyHours": 40,
+      "active": true
+    },
+    {
+      "id": "col-4",
+      "code": "1004",
+      "pin": "1234",
+      "name": "Diego Fernando Rivas",
+      "email": "diego.rivas@empresa.com",
+      "phone": "+34 612 444 555",
+      "department": "Ventas y Caja",
+      "role": "Cajero / Atención",
+      "avatarColor": "#7c3aed",
+      "targetWeeklyHours": 32,
+      "active": true
+    },
+    {
+      "id": "col-5",
+      "code": "1005",
+      "pin": "1234",
+      "name": "Laura Patricia Gómez",
+      "email": "laura.gomez@empresa.com",
+      "phone": "+34 612 555 666",
+      "department": "Operaciones y Almacén",
+      "role": "Responsable de Logística",
+      "avatarColor": "#dc2626",
+      "targetWeeklyHours": 40,
+      "active": true
+    },
+    {
+      "id": "col-6",
+      "code": "1006",
+      "pin": "1234",
+      "name": "Mateo Alejandro Torres",
+      "email": "mateo.t@empresa.com",
+      "phone": "+34 612 666 777",
+      "department": "Operaciones y Almacén",
+      "role": "Operador de Stock",
+      "avatarColor": "#0891b2",
+      "targetWeeklyHours": 40,
+      "active": true
+    },
+    {
+      "id": "col-7",
+      "code": "1007",
+      "pin": "1234",
+      "name": "Valentina Restrepo",
+      "email": "valentina.r@empresa.com",
+      "phone": "+34 612 777 888",
+      "department": "Cocina y Barra",
+      "role": "Jefa de Cocina",
+      "avatarColor": "#ea580c",
+      "targetWeeklyHours": 40,
+      "active": true
+    },
+    {
+      "id": "col-8",
+      "code": "1008",
+      "pin": "1234",
+      "name": "Javier Enrique Soto",
+      "email": "javier.soto@empresa.com",
+      "phone": "+34 612 888 999",
+      "department": "Cocina y Barra",
+      "role": "Barista / Ayudante",
+      "avatarColor": "#4f46e5",
+      "targetWeeklyHours": 30,
+      "active": true
+    }
+  ],
+  "schedules": [
+    {
+      "id": "sch-col-1-2026-10-12",
+      "collaboratorId": "col-1",
+      "date": "2026-10-12",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-13",
+      "collaboratorId": "col-1",
+      "date": "2026-10-13",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-14",
+      "collaboratorId": "col-1",
+      "date": "2026-10-14",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-15",
+      "collaboratorId": "col-1",
+      "date": "2026-10-15",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-16",
+      "collaboratorId": "col-1",
+      "date": "2026-10-16",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-17",
+      "collaboratorId": "col-1",
+      "date": "2026-10-17",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-18",
+      "collaboratorId": "col-1",
+      "date": "2026-10-18",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-12",
+      "collaboratorId": "col-2",
+      "date": "2026-10-12",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-13",
+      "collaboratorId": "col-2",
+      "date": "2026-10-13",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-14",
+      "collaboratorId": "col-2",
+      "date": "2026-10-14",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-15",
+      "collaboratorId": "col-2",
+      "date": "2026-10-15",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-16",
+      "collaboratorId": "col-2",
+      "date": "2026-10-16",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-17",
+      "collaboratorId": "col-2",
+      "date": "2026-10-17",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-18",
+      "collaboratorId": "col-2",
+      "date": "2026-10-18",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-12",
+      "collaboratorId": "col-3",
+      "date": "2026-10-12",
+      "shiftId": "shift-split",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-13",
+      "collaboratorId": "col-3",
+      "date": "2026-10-13",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-14",
+      "collaboratorId": "col-3",
+      "date": "2026-10-14",
+      "shiftId": "shift-split",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-15",
+      "collaboratorId": "col-3",
+      "date": "2026-10-15",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-16",
+      "collaboratorId": "col-3",
+      "date": "2026-10-16",
+      "shiftId": "shift-split",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-17",
+      "collaboratorId": "col-3",
+      "date": "2026-10-17",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-18",
+      "collaboratorId": "col-3",
+      "date": "2026-10-18",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-12",
+      "collaboratorId": "col-4",
+      "date": "2026-10-12",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-13",
+      "collaboratorId": "col-4",
+      "date": "2026-10-13",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-14",
+      "collaboratorId": "col-4",
+      "date": "2026-10-14",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-15",
+      "collaboratorId": "col-4",
+      "date": "2026-10-15",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-16",
+      "collaboratorId": "col-4",
+      "date": "2026-10-16",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-17",
+      "collaboratorId": "col-4",
+      "date": "2026-10-17",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-18",
+      "collaboratorId": "col-4",
+      "date": "2026-10-18",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-12",
+      "collaboratorId": "col-5",
+      "date": "2026-10-12",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-13",
+      "collaboratorId": "col-5",
+      "date": "2026-10-13",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-14",
+      "collaboratorId": "col-5",
+      "date": "2026-10-14",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-15",
+      "collaboratorId": "col-5",
+      "date": "2026-10-15",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-16",
+      "collaboratorId": "col-5",
+      "date": "2026-10-16",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-17",
+      "collaboratorId": "col-5",
+      "date": "2026-10-17",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-18",
+      "collaboratorId": "col-5",
+      "date": "2026-10-18",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-12",
+      "collaboratorId": "col-6",
+      "date": "2026-10-12",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-13",
+      "collaboratorId": "col-6",
+      "date": "2026-10-13",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-14",
+      "collaboratorId": "col-6",
+      "date": "2026-10-14",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-15",
+      "collaboratorId": "col-6",
+      "date": "2026-10-15",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-16",
+      "collaboratorId": "col-6",
+      "date": "2026-10-16",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-17",
+      "collaboratorId": "col-6",
+      "date": "2026-10-17",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-18",
+      "collaboratorId": "col-6",
+      "date": "2026-10-18",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-7-2026-10-12",
+      "collaboratorId": "col-7",
+      "date": "2026-10-12",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-13",
+      "collaboratorId": "col-7",
+      "date": "2026-10-13",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-14",
+      "collaboratorId": "col-7",
+      "date": "2026-10-14",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-15",
+      "collaboratorId": "col-7",
+      "date": "2026-10-15",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-16",
+      "collaboratorId": "col-7",
+      "date": "2026-10-16",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-17",
+      "collaboratorId": "col-7",
+      "date": "2026-10-17",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-7-2026-10-18",
+      "collaboratorId": "col-7",
+      "date": "2026-10-18",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-12",
+      "collaboratorId": "col-8",
+      "date": "2026-10-12",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-13",
+      "collaboratorId": "col-8",
+      "date": "2026-10-13",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-14",
+      "collaboratorId": "col-8",
+      "date": "2026-10-14",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-15",
+      "collaboratorId": "col-8",
+      "date": "2026-10-15",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-16",
+      "collaboratorId": "col-8",
+      "date": "2026-10-16",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-17",
+      "collaboratorId": "col-8",
+      "date": "2026-10-17",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-18",
+      "collaboratorId": "col-8",
+      "date": "2026-10-18",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-19",
+      "collaboratorId": "col-1",
+      "date": "2026-10-19",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-20",
+      "collaboratorId": "col-1",
+      "date": "2026-10-20",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-21",
+      "collaboratorId": "col-1",
+      "date": "2026-10-21",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-22",
+      "collaboratorId": "col-1",
+      "date": "2026-10-22",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-23",
+      "collaboratorId": "col-1",
+      "date": "2026-10-23",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-24",
+      "collaboratorId": "col-1",
+      "date": "2026-10-24",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-25",
+      "collaboratorId": "col-1",
+      "date": "2026-10-25",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-19",
+      "collaboratorId": "col-2",
+      "date": "2026-10-19",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-20",
+      "collaboratorId": "col-2",
+      "date": "2026-10-20",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-21",
+      "collaboratorId": "col-2",
+      "date": "2026-10-21",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-22",
+      "collaboratorId": "col-2",
+      "date": "2026-10-22",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-23",
+      "collaboratorId": "col-2",
+      "date": "2026-10-23",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-24",
+      "collaboratorId": "col-2",
+      "date": "2026-10-24",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-25",
+      "collaboratorId": "col-2",
+      "date": "2026-10-25",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-19",
+      "collaboratorId": "col-3",
+      "date": "2026-10-19",
+      "shiftId": "shift-split",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-20",
+      "collaboratorId": "col-3",
+      "date": "2026-10-20",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-21",
+      "collaboratorId": "col-3",
+      "date": "2026-10-21",
+      "shiftId": "shift-split",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-22",
+      "collaboratorId": "col-3",
+      "date": "2026-10-22",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-23",
+      "collaboratorId": "col-3",
+      "date": "2026-10-23",
+      "shiftId": "shift-split",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-24",
+      "collaboratorId": "col-3",
+      "date": "2026-10-24",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-25",
+      "collaboratorId": "col-3",
+      "date": "2026-10-25",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-19",
+      "collaboratorId": "col-4",
+      "date": "2026-10-19",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-20",
+      "collaboratorId": "col-4",
+      "date": "2026-10-20",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-21",
+      "collaboratorId": "col-4",
+      "date": "2026-10-21",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-22",
+      "collaboratorId": "col-4",
+      "date": "2026-10-22",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-23",
+      "collaboratorId": "col-4",
+      "date": "2026-10-23",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-24",
+      "collaboratorId": "col-4",
+      "date": "2026-10-24",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-25",
+      "collaboratorId": "col-4",
+      "date": "2026-10-25",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-19",
+      "collaboratorId": "col-5",
+      "date": "2026-10-19",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-20",
+      "collaboratorId": "col-5",
+      "date": "2026-10-20",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-21",
+      "collaboratorId": "col-5",
+      "date": "2026-10-21",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-22",
+      "collaboratorId": "col-5",
+      "date": "2026-10-22",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-23",
+      "collaboratorId": "col-5",
+      "date": "2026-10-23",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-24",
+      "collaboratorId": "col-5",
+      "date": "2026-10-24",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-25",
+      "collaboratorId": "col-5",
+      "date": "2026-10-25",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-19",
+      "collaboratorId": "col-6",
+      "date": "2026-10-19",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-20",
+      "collaboratorId": "col-6",
+      "date": "2026-10-20",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-21",
+      "collaboratorId": "col-6",
+      "date": "2026-10-21",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-22",
+      "collaboratorId": "col-6",
+      "date": "2026-10-22",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-23",
+      "collaboratorId": "col-6",
+      "date": "2026-10-23",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-24",
+      "collaboratorId": "col-6",
+      "date": "2026-10-24",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-25",
+      "collaboratorId": "col-6",
+      "date": "2026-10-25",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-7-2026-10-19",
+      "collaboratorId": "col-7",
+      "date": "2026-10-19",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-20",
+      "collaboratorId": "col-7",
+      "date": "2026-10-20",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-21",
+      "collaboratorId": "col-7",
+      "date": "2026-10-21",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-22",
+      "collaboratorId": "col-7",
+      "date": "2026-10-22",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-23",
+      "collaboratorId": "col-7",
+      "date": "2026-10-23",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-24",
+      "collaboratorId": "col-7",
+      "date": "2026-10-24",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-7-2026-10-25",
+      "collaboratorId": "col-7",
+      "date": "2026-10-25",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-19",
+      "collaboratorId": "col-8",
+      "date": "2026-10-19",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-20",
+      "collaboratorId": "col-8",
+      "date": "2026-10-20",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-21",
+      "collaboratorId": "col-8",
+      "date": "2026-10-21",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-22",
+      "collaboratorId": "col-8",
+      "date": "2026-10-22",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-23",
+      "collaboratorId": "col-8",
+      "date": "2026-10-23",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-24",
+      "collaboratorId": "col-8",
+      "date": "2026-10-24",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-25",
+      "collaboratorId": "col-8",
+      "date": "2026-10-25",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-26",
+      "collaboratorId": "col-1",
+      "date": "2026-10-26",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-27",
+      "collaboratorId": "col-1",
+      "date": "2026-10-27",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-28",
+      "collaboratorId": "col-1",
+      "date": "2026-10-28",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-29",
+      "collaboratorId": "col-1",
+      "date": "2026-10-29",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-30",
+      "collaboratorId": "col-1",
+      "date": "2026-10-30",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-10-31",
+      "collaboratorId": "col-1",
+      "date": "2026-10-31",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-1-2026-11-01",
+      "collaboratorId": "col-1",
+      "date": "2026-11-01",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-26",
+      "collaboratorId": "col-2",
+      "date": "2026-10-26",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-27",
+      "collaboratorId": "col-2",
+      "date": "2026-10-27",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-28",
+      "collaboratorId": "col-2",
+      "date": "2026-10-28",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-29",
+      "collaboratorId": "col-2",
+      "date": "2026-10-29",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-30",
+      "collaboratorId": "col-2",
+      "date": "2026-10-30",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-10-31",
+      "collaboratorId": "col-2",
+      "date": "2026-10-31",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-2-2026-11-01",
+      "collaboratorId": "col-2",
+      "date": "2026-11-01",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-26",
+      "collaboratorId": "col-3",
+      "date": "2026-10-26",
+      "shiftId": "shift-split",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-27",
+      "collaboratorId": "col-3",
+      "date": "2026-10-27",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-28",
+      "collaboratorId": "col-3",
+      "date": "2026-10-28",
+      "shiftId": "shift-split",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-29",
+      "collaboratorId": "col-3",
+      "date": "2026-10-29",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-30",
+      "collaboratorId": "col-3",
+      "date": "2026-10-30",
+      "shiftId": "shift-split",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-10-31",
+      "collaboratorId": "col-3",
+      "date": "2026-10-31",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-3-2026-11-01",
+      "collaboratorId": "col-3",
+      "date": "2026-11-01",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-26",
+      "collaboratorId": "col-4",
+      "date": "2026-10-26",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-27",
+      "collaboratorId": "col-4",
+      "date": "2026-10-27",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-28",
+      "collaboratorId": "col-4",
+      "date": "2026-10-28",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-29",
+      "collaboratorId": "col-4",
+      "date": "2026-10-29",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-30",
+      "collaboratorId": "col-4",
+      "date": "2026-10-30",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-10-31",
+      "collaboratorId": "col-4",
+      "date": "2026-10-31",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-4-2026-11-01",
+      "collaboratorId": "col-4",
+      "date": "2026-11-01",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-26",
+      "collaboratorId": "col-5",
+      "date": "2026-10-26",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-27",
+      "collaboratorId": "col-5",
+      "date": "2026-10-27",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-28",
+      "collaboratorId": "col-5",
+      "date": "2026-10-28",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-29",
+      "collaboratorId": "col-5",
+      "date": "2026-10-29",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-30",
+      "collaboratorId": "col-5",
+      "date": "2026-10-30",
+      "shiftId": "shift-night",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-10-31",
+      "collaboratorId": "col-5",
+      "date": "2026-10-31",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-5-2026-11-01",
+      "collaboratorId": "col-5",
+      "date": "2026-11-01",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-26",
+      "collaboratorId": "col-6",
+      "date": "2026-10-26",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-27",
+      "collaboratorId": "col-6",
+      "date": "2026-10-27",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-28",
+      "collaboratorId": "col-6",
+      "date": "2026-10-28",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-29",
+      "collaboratorId": "col-6",
+      "date": "2026-10-29",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-30",
+      "collaboratorId": "col-6",
+      "date": "2026-10-30",
+      "shiftId": "shift-afternoon",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-10-31",
+      "collaboratorId": "col-6",
+      "date": "2026-10-31",
+      "shiftId": "shift-morning",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-6-2026-11-01",
+      "collaboratorId": "col-6",
+      "date": "2026-11-01",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-7-2026-10-26",
+      "collaboratorId": "col-7",
+      "date": "2026-10-26",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-27",
+      "collaboratorId": "col-7",
+      "date": "2026-10-27",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-28",
+      "collaboratorId": "col-7",
+      "date": "2026-10-28",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-29",
+      "collaboratorId": "col-7",
+      "date": "2026-10-29",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-30",
+      "collaboratorId": "col-7",
+      "date": "2026-10-30",
+      "shiftId": "shift-vacation",
+      "notes": "Vacaciones anuales autorizadas"
+    },
+    {
+      "id": "sch-col-7-2026-10-31",
+      "collaboratorId": "col-7",
+      "date": "2026-10-31",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-7-2026-11-01",
+      "collaboratorId": "col-7",
+      "date": "2026-11-01",
+      "shiftId": "shift-off",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-26",
+      "collaboratorId": "col-8",
+      "date": "2026-10-26",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-27",
+      "collaboratorId": "col-8",
+      "date": "2026-10-27",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-28",
+      "collaboratorId": "col-8",
+      "date": "2026-10-28",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-29",
+      "collaboratorId": "col-8",
+      "date": "2026-10-29",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-30",
+      "collaboratorId": "col-8",
+      "date": "2026-10-30",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-10-31",
+      "collaboratorId": "col-8",
+      "date": "2026-10-31",
+      "shiftId": "shift-half",
+      "notes": ""
+    },
+    {
+      "id": "sch-col-8-2026-11-01",
+      "collaboratorId": "col-8",
+      "date": "2026-11-01",
+      "shiftId": "shift-off",
+      "notes": ""
+    }
+  ],
+  "attendance": [
+    {
+      "id": "att-col-1-1",
+      "collaboratorId": "col-1",
+      "date": "2026-10-20",
+      "type": "in",
+      "timestamp": "2026-10-20T07:58:20.000Z",
+      "time": "07:58:20",
+      "device": "PC-Recepción 01",
+      "notes": "Llegada puntual"
+    },
+    {
+      "id": "att-col-1-2",
+      "collaboratorId": "col-1",
+      "date": "2026-10-20",
+      "type": "break_start",
+      "timestamp": "2026-10-20T12:30:15.000Z",
+      "time": "12:30:15",
+      "device": "PC-Recepción 01",
+      "notes": ""
+    },
+    {
+      "id": "att-col-1-3",
+      "collaboratorId": "col-1",
+      "date": "2026-10-20",
+      "type": "break_end",
+      "timestamp": "2026-10-20T13:15:20.000Z",
+      "time": "13:15:20",
+      "device": "PC-Recepción 01",
+      "notes": ""
+    },
+    {
+      "id": "att-col-1-4",
+      "collaboratorId": "col-1",
+      "date": "2026-10-20",
+      "type": "out",
+      "timestamp": "2026-10-20T16:02:10.000Z",
+      "time": "16:02:10",
+      "device": "PC-Recepción 01",
+      "notes": "Fin de jornada"
+    },
+    {
+      "id": "att-col-6-1",
+      "collaboratorId": "col-6",
+      "date": "2026-10-20",
+      "type": "in",
+      "timestamp": "2026-10-20T08:14:05.000Z",
+      "time": "08:14:05",
+      "device": "PC-Almacén",
+      "notes": "Tráfico pesado en acceso"
+    },
+    {
+      "id": "att-col-6-2",
+      "collaboratorId": "col-6",
+      "date": "2026-10-20",
+      "type": "break_start",
+      "timestamp": "2026-10-20T13:00:00.000Z",
+      "time": "13:00:00",
+      "device": "PC-Almacén",
+      "notes": ""
+    },
+    {
+      "id": "att-col-6-3",
+      "collaboratorId": "col-6",
+      "date": "2026-10-20",
+      "type": "break_end",
+      "timestamp": "2026-10-20T13:45:00.000Z",
+      "time": "13:45:00",
+      "device": "PC-Almacén",
+      "notes": ""
+    },
+    {
+      "id": "att-col-2-1",
+      "collaboratorId": "col-2",
+      "date": "2026-10-20",
+      "type": "in",
+      "timestamp": "2026-10-20T13:55:30.000Z",
+      "time": "13:55:30",
+      "device": "PC-Mostrador 02",
+      "notes": "Apertura de turno de tarde"
+    },
+    {
+      "id": "att-col-4-1",
+      "collaboratorId": "col-4",
+      "date": "2026-10-20",
+      "type": "in",
+      "timestamp": "2026-10-20T14:02:40.000Z",
+      "time": "14:02:40",
+      "device": "PC-Caja 01",
+      "notes": ""
+    },
+    {
+      "id": "att-col-3-1",
+      "collaboratorId": "col-3",
+      "date": "2026-10-20",
+      "type": "in",
+      "timestamp": "2026-10-20T08:58:10.000Z",
+      "time": "08:58:10",
+      "device": "PC-Supervisión",
+      "notes": ""
+    },
+    {
+      "id": "att-col-3-2",
+      "collaboratorId": "col-3",
+      "date": "2026-10-20",
+      "type": "break_start",
+      "timestamp": "2026-10-20T13:30:00.000Z",
+      "time": "13:30:00",
+      "device": "PC-Supervisión",
+      "notes": "Pausa intermedia de turno partido"
+    },
+    {
+      "id": "att-col-5-1792539426027",
+      "collaboratorId": "col-5",
+      "date": "2026-10-20",
+      "type": "in",
+      "timestamp": "2026-10-20T23:37:06.027Z",
+      "time": "17:37:06",
+      "device": "PC-Logistica",
+      "notes": ""
+    },
+    {
+      "id": "att-col-2-1792540091604",
+      "collaboratorId": "col-2",
+      "date": "2026-10-20",
+      "type": "out",
+      "timestamp": "2026-10-20T23:48:11.604Z",
+      "time": "17:48:11",
+      "device": "PC Windows (App Colaborador)",
+      "notes": ""
+    }
+  ]
+}
