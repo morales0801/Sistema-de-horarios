@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: shiftflow-horarios
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm --prefix client install && npm --prefix client run build
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
