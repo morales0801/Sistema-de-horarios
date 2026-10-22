@@ -324,7 +324,7 @@ class Database {
     return result.sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());
   }
 
-  clockAttendance({ collaboratorId, pin, type, device = 'App Colaborador', notes = '' }) {
+  clockAttendance({ collaboratorId, pin, type, device = 'App Colaborador', notes = '', clientDate, clientTime }) {
     const collab = this.getCollaboratorById(collaboratorId);
     if (!collab) {
       throw new Error('Colaborador no encontrado');
@@ -335,8 +335,9 @@ class Database {
     }
 
     const now = new Date();
-    const dateStr = now.toISOString().split('T')[0];
-    const timeStr = now.toTimeString().split(' ')[0]; // HH:MM:SS
+    // Use client's local date/time if sent, otherwise fallback to server time
+    const dateStr = clientDate || now.toISOString().split('T')[0];
+    const timeStr = clientTime || `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
 
     // Check last punch to prevent erratic clicks
     const todayPunches = this.getAttendance({ date: dateStr, collaboratorId });

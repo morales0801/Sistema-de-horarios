@@ -179,11 +179,11 @@ app.post('/api/schedules/clear-week', (req, res) => {
 // --- Attendance & Clock-in Endpoints ---
 app.post('/api/attendance/clock', (req, res) => {
   try {
-    const { collaboratorId, pin, type, device, notes } = req.body;
+    const { collaboratorId, pin, type, device, notes, clientDate, clientTime } = req.body;
     if (!collaboratorId || !type) {
       return res.status(400).json({ error: 'collaboratorId y type son requeridos' });
     }
-    const result = db.clockAttendance({ collaboratorId, pin, type, device, notes });
+    const result = db.clockAttendance({ collaboratorId, pin, type, device, notes, clientDate, clientTime });
     res.json(result);
   } catch (err) {
     res.status(400).json({ error: err.message });
